@@ -14,7 +14,7 @@ export interface WiredBaseViewProps {
 }
 
 export const WiredBaseView: FC<PropsWithChildren<WiredBaseViewProps>> = props => {
-    const { wiredType = '', requiresFurni = WiredFurniType.STUFF_SELECTION_OPTION_NONE, save = null, validate = null, children = null, hasSpecialInput = false, maxItemSelectionCount = 5 } = props;
+    const { wiredType = '', requiresFurni = WiredFurniType.STUFF_SELECTION_OPTION_NONE, save = null, validate = null, children = null, hasSpecialInput = false, maxItemSelectionCount = 99 } = props;
     const [wiredName, setWiredName] = useState<string>(null);
     const [wiredDescription, setWiredDescription] = useState<string>(null);
     const [needsSave, setNeedsSave] = useState<boolean>(false);
