@@ -125,7 +125,7 @@ export const CameraWidgetCheckoutView: FC<CameraWidgetCheckoutViewProps> = props
                                 { (price.duckets > 0) &&
                                     <Flex gap={ 1 }>
                                         <Text bold>{ price.duckets }</Text>
-                                        <LayoutCurrencyIcon type={ 5 } />
+                                        <LayoutCurrencyIcon type={ 0 } />
                                     </Flex> }
                             </Flex> }
                         { (picturesBought > 0) &&
@@ -153,7 +153,7 @@ export const CameraWidgetCheckoutView: FC<CameraWidgetCheckoutViewProps> = props
                                 <Text>{ LocalizeText('catalog.purchase.confirmation.dialog.cost') }</Text>
                                 <Flex gap={ 1 }>
                                     <Text bold>{ price.publishDucketPrice }</Text>
-                                    <LayoutCurrencyIcon type={ 5 } />
+                                    <LayoutCurrencyIcon type={ 0 } />
                                 </Flex>
                             </Flex> }
                         { (publishCooldown > 0) && <div className="mt-1 text-center fw-bold">{ LocalizeText('camera.publish.wait', [ 'minutes' ], [ Math.ceil( publishCooldown / 60).toString() ]) }</div> }
