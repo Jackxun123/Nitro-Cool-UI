@@ -13,7 +13,7 @@ const useWiredState = () =>
     const [ furniIds, setFurniIds ] = useState<number[]>([]);
     const [ actionDelay, setActionDelay ] = useState<number>(0);
     const [ allowsFurni, setAllowsFurni ] = useState<number>(WiredFurniType.STUFF_SELECTION_OPTION_NONE);
-    const [ maxItemSelectionCount, setMaxItemSelectionCount ] = useState<number>(5);
+    const [ maxItemSelectionCount, setMaxItemSelectionCount ] = useState<number>(99);
     const { showConfirm } = useNotification();
 
     const saveWired = () =>
