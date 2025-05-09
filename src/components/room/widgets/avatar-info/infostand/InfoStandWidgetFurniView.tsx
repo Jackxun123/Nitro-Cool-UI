@@ -417,8 +417,8 @@ export const InfoStandWidgetFurniView: FC<InfoStandWidgetFurniViewProps> = props
 								<hr className="m-0" />
 								<Text small wrap variant="white">
 								X = {itemLocation.x}  and  Y = {itemLocation.y}<br />
-								BuildHeight = {itemLocation.z < 0.01 ? 0 : itemLocation.z}<br />
-								{ canSeeFurniId && <Text wrap variant="white"> Room Furnishing ID: { avatarInfo.id }</Text> }
+								构建高度 = {itemLocation.z < 0.01 ? 0 : itemLocation.z}<br />
+								{ canSeeFurniId && <Text wrap variant="white"> 家具ID: { avatarInfo.id }</Text> }
 							</Text>
 							</>
 							{itemLocation.x > -1}
