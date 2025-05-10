@@ -4,7 +4,7 @@ import { Column, Flex, Text } from '../../../../common';
 import { WiredConditionBaseView } from './WiredConditionBaseView';
 
 export const WiredConditionFurniHasAvatarOnView: FC<{}> = props => {
-    const [requireAll, setRequireAll] = useState<number>(5); // Default to 5
+    const [requireAll, setRequireAll] = useState<number>(99); // Default to 5
 
     const handleRadioChange = (value: number) => {
         setRequireAll(value);
