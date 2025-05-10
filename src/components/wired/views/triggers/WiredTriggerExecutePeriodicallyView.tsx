@@ -22,7 +22,7 @@ export const WiredTriggeExecutePeriodicallyView: FC<{}> = props =>
                 <Text bold>{ LocalizeText('wiredfurni.params.settime', [ 'seconds' ], [ GetWiredTimeLocale(time) ]) }</Text>
                 <Slider
                     min={ 1 }
-                    max={ 60 }
+                    max={ 180 }
                     value={ time }
                     onChange={ event => setTime(event) } />
             </Column>
