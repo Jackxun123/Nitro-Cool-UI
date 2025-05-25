@@ -4,7 +4,7 @@ import { Column, Text } from '../../../../common';
 import { useWired } from '../../../../hooks';
 import { WiredActionBaseView } from './WiredActionBaseView';
 
-const ALLOWED_HAND_ITEM_IDS: number[] = [ 2, 5, 7, 8, 9, 10, 27 ];
+const ALLOWED_HAND_ITEM_IDS: number[] = [ 2, 5, 7, 8, 9, 10, 27, 1081, 29, 1058, 1077, 148, 1094];
 
 export const WiredActionBotGiveHandItemView: FC<{}> = props =>
 {
